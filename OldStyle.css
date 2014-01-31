@@ -1,0 +1,370 @@
+BODY
+{
+	font-weight: normal;
+	font-size: 10pt;
+	word-spacing: normal;
+	text-transform: none;
+	font-family: 'Trebuchet MS' , Verdana, Arial;
+	letter-spacing: normal;
+	background-color: #000000;
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}
+H1
+{
+	font-weight: 700;
+	font-size: 2em;
+	word-spacing: normal;
+	text-transform: none;
+	color: white;
+	font-style: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: normal;
+	background-color: #006699;
+	text-decoration: none;
+}	
+		
+H2	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD
+{
+	font-size: 1em;
+	word-spacing: normal;
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: normal;
+}	
+		
+TH
+{
+	font-weight: bold;
+	font-size: 1em;
+	word-spacing: normal;
+	vertical-align: baseline;
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: normal;
+}	
+
+
+A:link
+{
+	color: #3333cc;
+	text-decoration: none;
+}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	}
+	
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.17em;
+	}	
+
+BLOCKQUOTE, PRE	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+.Text_10
+{
+	font-size: 10pt;
+	color: white;
+	font-family: 'Trebuchet MS' , Verdana, Arial;
+}
+
+.SectionHeader
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: white;
+	font-family: 'Trebuchet MS' , Verdana, Arial;
+	background-color: #ff6600;
+}
+
+.Button
+{
+	padding-right: 1px;
+	border-top: #d1f9ff 1px solid;
+	padding-left: 1px;
+	font-weight: bold;
+	font-size: 8pt;
+	margin-left: 1px;
+	border-left: #d1f9ff 1px solid;
+	color: black;
+	margin-right: 1px;
+	font-family: 'Trebuchet MS' , Verdana, Arial;
+	background-color: lightgrey;
+}
+.SMParent	
+{
+	padding-right: 3px;
+	padding-left: 30px;
+	background-image: url(images/menubackground_old.jpg);
+	padding-bottom: 3px;
+	margin: 0px;
+	font: bold 12px arial;
+	color: midnightblue;
+	padding-top: 3px;
+	background-color: eeeeff;
+	text-align: left;
+	text-decoration: none;
+}
+.SMParentOver
+{
+	padding-right: 3px;
+	padding-left: 30px;
+	padding-bottom: 3px;
+	margin: 0px;
+	font: bold 12px arial;
+	color: midnightblue;
+	padding-top: 3px;
+	background-color: eeeeff;
+	text-align: left;
+	text-decoration: none;
+	background-image:url(images/menubackground_old.jpg);
+}
+.SMParentSelected
+{
+	padding-right: 3px;
+	padding-left: 30px;
+	padding-bottom: 3px;
+	margin: 1px;
+	font: bold 12px arial;
+	color: midnightblue;
+	padding-top: 3px;
+	background-color: lightblue;
+	text-align: left;
+	text-decoration: none;
+	background-image:url(images/menubackground_old.jpg);
+}
+
+.SMChild
+{
+	padding-left: 0px;
+	font: bold 12px verdana;
+	color: white;
+	border-bottom: #cccccc 0px solid;
+	background-color: transparent;
+	text-align: left;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+.SMChildOver
+{
+	padding-left: 20px;
+	font: bold 12px verdana;
+	color: green;
+	border-bottom: #cccccc 0px solid;
+	background-color: #efefef;
+	text-align: left;
+	text-decoration: none;
+}
+
+.SMChildSelected {
+    font: 11px Arial;
+    background-color: yellow;
+    padding-left: 10px;
+}
+
+
+.SMChildrenBox
+{
+	background-color: #262526;
+}
+
+.SMMenu
+{
+	border-right: #cccccc 0px solid;
+	padding-right: 0px;
+	border-top: #cccccc 0px solid;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-left: #cccccc 0px solid;
+	width: 200px;
+	padding-top: 0px;
+	background-color: transparent;
+	text-decoration:none;
+}
+
+.SMImageChild 
+{
+		border:0px;
+	}
+
+.sMImageParent {
+	display:none;
+}
+INPUT
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 0px;
+}
+TABLE
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 0px;
+}
+.ReadOnlyTextBox
+{
+	border-right: lightsteelblue 1pt solid;
+	border-top: lightsteelblue 1pt solid;
+	border-left: lightsteelblue 1pt solid;
+	color: midnightblue;
+	border-bottom: lightsteelblue 1pt solid;
+	background-color: transparent;
+}
+.DataGridAlternatingItem
+{
+	font-size: 10pt;
+	color: white;
+	background-color: #262526;
+}
+.DataGridItem
+{
+	font-size: 10pt;
+	color: white;
+	background-color: black;
+}
+
+.DataGridHeader
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: black;
+	background-color: #ff9900;
+}
+.DataGrid
+{
+	border-right: white 1pt;
+	padding-right: 1px;
+	border-top: white 1pt;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	border-left: white 1pt;
+	padding-top: 1px;
+	border-bottom: white 1pt;
+}
+.ItemBackground
+{
+	border-right: orangered 1pt solid;
+	border-top: orangered 1pt solid;
+	border-left: orangered 1pt solid;
+	border-bottom: orangered 1pt solid;
+	background-color: #262526;
+}
+.HeaderText
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: white;
+	font-family: Verdana, 'Arial Black';
+}
+.MenuHeaderText
+{	font-weight: bold;
+	font-size: 36pt;
+	color: white;
+	font-family: Verdana, 'Arial Black';
+}

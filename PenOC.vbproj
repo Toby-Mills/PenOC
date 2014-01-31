@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB55B382-F2C3-48DC-8167-54A1A1BF4BDB}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>PenOC</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>PenOC</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PenOC.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PenOC.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_SlideMenu3_Pro_Net">
+      <Name>obout_SlideMenu3_Pro_Net</Name>
+      <HintPath>bin\obout_SlideMenu3_Pro_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Office">
+      <Name>office</Name>
+    </Reference>
+    <Reference Include="SpatialDimensionLibrary">
+      <Name>SpatialDimensionLibrary</Name>
+      <HintPath>bin\SpatialDimensionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminCommittee.aspx" />
+    <Content Include="AdminCompetitors.aspx" />
+    <Content Include="AdminEvents.aspx" />
+    <Content Include="AdminFiles.aspx" />
+    <Content Include="AdminLogs.aspx" />
+    <Content Include="AdminMembership.aspx" />
+    <Content Include="AdminNews.aspx" />
+    <Content Include="AdminUsers.aspx" />
+    <Content Include="CalendarPopup.aspx" />
+    <Content Include="CompetitorEdit.aspx" />
+    <Content Include="CompetitorList.ascx" />
+    <Content Include="CompetitorMatch.aspx" />
+    <Content Include="CompetitorSearch.ascx" />
+    <Content Include="CompetitorSearchPopup.aspx" />
+    <Content Include="CompetitorSelect.ascx" />
+    <Content Include="ConfirmDelete.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="CourseEdit.aspx" />
+    <Content Include="CourseList.ascx" />
+    <Content Include="CourseResults.ascx" />
+    <Content Include="DownloadEdit_Popup.aspx" />
+    <Content Include="DownloadList.ascx" />
+    <Content Include="Downloads.aspx" />
+    <Content Include="ErrorDisplay.aspx" />
+    <Content Include="EventBrief.ascx" />
+    <Content Include="EventDetails.aspx" />
+    <Content Include="EventEdit.aspx" />
+    <Content Include="EventList.ascx" />
+    <Content Include="EventResults.aspx" />
+    <Content Include="EventsArchive.aspx" />
+    <Content Include="EventSearch.ascx" />
+    <Content Include="EventSearchPopup.aspx" />
+    <Content Include="EventsFuture.aspx" />
+    <Content Include="EventsRecent.aspx" />
+    <Content Include="ExportResults.aspx" />
+    <Content Include="File.aspx" />
+    <Content Include="FileList.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="home.htm" />
+    <Content Include="HomeEvents.aspx" />
+    <Content Include="HomeHeader.aspx" />
+    <Content Include="HomeNews.aspx" />
+    <Content Include="Hook_EventPhotos.aspx" />
+    <Content Include="HTMLEditor.ascx" />
+    <Content Include="images\Bold.bmp" />
+    <Content Include="images\cal.gif" />
+    <Content Include="images\Cancel.bmp" />
+    <Content Include="images\Center.bmp" />
+    <Content Include="images\child.gif" />
+    <Content Include="images\childover.gif" />
+    <Content Include="images\childselected.gif" />
+    <Content Include="images\Delete.bmp" />
+    <Content Include="images\Directions.bmp" />
+    <Content Include="images\Edit.bmp" />
+    <Content Include="images\Email.bmp" />
+    <Content Include="images\Event_Championship.bmp" />
+    <Content Include="images\Event_ColourCoded.bmp" />
+    <Content Include="images\Event_Night.bmp" />
+    <Content Include="images\Event_Novelty.bmp" />
+    <Content Include="images\Event_Park.bmp" />
+    <Content Include="images\Event_Score.bmp" />
+    <Content Include="images\Event_Sprint.bmp" />
+    <Content Include="images\header\champs1.jpg" />
+    <Content Include="images\header\champs10.jpg" />
+    <Content Include="images\header\champs11.jpg" />
+    <Content Include="images\header\champs12.jpg" />
+    <Content Include="images\header\champs13.jpg" />
+    <Content Include="images\header\champs14.jpg" />
+    <Content Include="images\header\champs15.jpg" />
+    <Content Include="images\header\champs16.jpg" />
+    <Content Include="images\header\champs17.jpg" />
+    <Content Include="images\header\champs18.jpg" />
+    <Content Include="images\header\champs19.jpg" />
+    <Content Include="images\header\champs2.jpg" />
+    <Content Include="images\header\champs20.jpg" />
+    <Content Include="images\header\champs21.jpg" />
+    <Content Include="images\header\champs22.jpg" />
+    <Content Include="images\header\champs23.jpg" />
+    <Content Include="images\header\champs24.jpg" />
+    <Content Include="images\header\champs25.jpg" />
+    <Content Include="images\header\champs26.jpg" />
+    <Content Include="images\header\champs29.jpg" />
+    <Content Include="images\header\champs3.jpg" />
+    <Content Include="images\header\champs30.jpg" />
+    <Content Include="images\header\champs31.jpg" />
+    <Content Include="images\header\champs32.jpg" />
+    <Content Include="images\header\champs33.jpg" />
+    <Content Include="images\header\champs34.jpg" />
+    <Content Include="images\header\champs35.jpg" />
+    <Content Include="images\header\champs4.jpg" />
+    <Content Include="images\header\champs5.jpg" />
+    <Content Include="images\header\champs6.jpg" />
+    <Content Include="images\header\champs7.jpg" />
+    <Content Include="images\header\champs8.jpg" />
+    <Content Include="images\header\champs9.jpg" />
+    <Content Include="images\header\compass.jpg" />
+    <Content Include="images\header\compass2.jpg" />
+    <Content Include="images\header\compass3.jpg" />
+    <Content Include="images\header\compass6.jpg" />
+    <Content Include="images\header\control.jpg" />
+    <Content Include="images\header\family.jpg" />
+    <Content Include="images\header\feet.jpg" />
+    <Content Include="images\header\gaiters.jpg" />
+    <Content Include="images\header\headlamp.jpg" />
+    <Content Include="images\header\kids.jpg" />
+    <Content Include="images\header\map1.jpg" />
+    <Content Include="images\header\map2.jpg" />
+    <Content Include="images\header\map3.jpg" />
+    <Content Include="images\header\map4.jpg" />
+    <Content Include="images\header\runner1.jpg" />
+    <Content Include="images\header\runner10.jpg" />
+    <Content Include="images\header\runner11.jpg" />
+    <Content Include="images\header\runner2.jpg" />
+    <Content Include="images\header\runner4.jpg" />
+    <Content Include="images\header\runner5.jpg" />
+    <Content Include="images\header\runner6.jpg" />
+    <Content Include="images\header\runner7.jpg" />
+    <Content Include="images\header\runner8.jpg" />
+    <Content Include="images\header\runner9.jpg" />
+    <Content Include="images\header\runners2.jpg" />
+    <Content Include="images\header\shoe2.GIF" />
+    <Content Include="images\HR.bmp" />
+    <Content Include="images\Image.bmp" />
+    <Content Include="images\Italic.bmp" />
+    <Content Include="images\LineBreak.bmp" />
+    <Content Include="images\Link.bmp" />
+    <Content Include="images\Logo.bmp" />
+    <Content Include="images\Logo1.bmp" />
+    <Content Include="images\parent.gif" />
+    <Content Include="images\parentover.gif" />
+    <Content Include="images\parentselected.gif" />
+    <Content Include="images\PenOC.bmp" />
+    <Content Include="images\person.bmp" />
+    <Content Include="images\Photos.bmp" />
+    <Content Include="images\Refresh.bmp" />
+    <Content Include="images\Results.bmp" />
+    <Content Include="images\Save.bmp" />
+    <Content Include="images\Startburst_Bottom.bmp" />
+    <Content Include="images\Startburst_Top.bmp" />
+    <Content Include="images\Underline.bmp" />
+    <Content Include="images\Update.bmp" />
+    <Content Include="images\warning.jpg" />
+    <Content Include="ImportResults.aspx" />
+    <Content Include="JavaScript\SlideMenu.js" />
+    <Content Include="LinkEventNotice.aspx" />
+    <Content Include="LinkEventResults.aspx" />
+    <Content Include="LogArchive.aspx" />
+    <Content Include="LogExplanation.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogList.ascx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="LogResults.aspx" />
+    <Content Include="LookupTables.aspx" />
+    <Content Include="Lookup_Club.aspx" />
+    <Content Include="Lookup_Venue.aspx" />
+    <Content Include="MapTest.aspx" />
+    <Content Include="MembershipList.ascx" />
+    <Content Include="menu.aspx" />
+    <Content Include="MyResults.aspx" />
+    <Content Include="NewsArchive.aspx" />
+    <Content Include="NewsEdit.aspx" />
+    <Content Include="NewsItem.aspx" />
+    <Content Include="NewsList.ascx" />
+    <Content Include="OldStyle.css" />
+    <Content Include="penoc.htm" />
+    <Content Include="Photo.aspx" />
+    <Content Include="PhotoHeader.aspx" />
+    <Content Include="PhotoIndex.aspx" />
+    <Content Include="PhotoViewer.htm" />
+    <Content Include="RedirectFrame.aspx" />
+    <Content Include="ResultList.ascx" />
+    <Content Include="SetStyle.aspx" />
+    <Content Include="Start.aspx" />
+    <Content Include="Styles.css" />
+    <Content Include="UploadFile.ascx" />
+    <Content Include="UploadImage.aspx" />
+    <Content Include="UploadPhotos.aspx" />
+    <Content Include="UserList.ascx" />
+    <Content Include="WorkItems.aspx" />
+    <Compile Include="Admin.aspx.designer.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCommittee.aspx.designer.vb">
+      <DependentUpon>AdminCommittee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCommittee.aspx.vb">
+      <DependentUpon>AdminCommittee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCompetitors.aspx.designer.vb">
+      <DependentUpon>AdminCompetitors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCompetitors.aspx.vb">
+      <DependentUpon>AdminCompetitors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEvents.aspx.designer.vb">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEvents.aspx.vb">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFiles.aspx.designer.vb">
+      <DependentUpon>AdminFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFiles.aspx.vb">
+      <DependentUpon>AdminFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogs.aspx.designer.vb">
+      <DependentUpon>AdminLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogs.aspx.vb">
+      <DependentUpon>AdminLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMembership.aspx.designer.vb">
+      <DependentUpon>AdminMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMembership.aspx.vb">
+      <DependentUpon>AdminMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminNews.aspx.designer.vb">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNews.aspx.vb">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.aspx.designer.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.aspx.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarPopup.aspx.designer.vb">
+      <DependentUpon>CalendarPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarPopup.aspx.vb">
+      <DependentUpon>CalendarPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clsCompressPage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsLookupManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPageViewStateZip.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorEdit.aspx.designer.vb">
+      <DependentUpon>CompetitorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorEdit.aspx.vb">
+      <DependentUpon>CompetitorEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorList.ascx.designer.vb">
+      <DependentUpon>CompetitorList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorList.ascx.vb">
+      <DependentUpon>CompetitorList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorMatch.aspx.designer.vb">
+      <DependentUpon>CompetitorMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorMatch.aspx.vb">
+      <DependentUpon>CompetitorMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorSearch.ascx.designer.vb">
+      <DependentUpon>CompetitorSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorSearch.ascx.vb">
+      <DependentUpon>CompetitorSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorSearchPopup.aspx.designer.vb">
+      <DependentUpon>CompetitorSearchPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorSearchPopup.aspx.vb">
+      <DependentUpon>CompetitorSearchPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompetitorSelect.ascx.designer.vb">
+      <DependentUpon>CompetitorSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorSelect.ascx.vb">
+      <DependentUpon>CompetitorSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmDelete.aspx.designer.vb">
+      <DependentUpon>ConfirmDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmDelete.aspx.vb">
+      <DependentUpon>ConfirmDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseEdit.aspx.designer.vb">
+      <DependentUpon>CourseEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseEdit.aspx.vb">
+      <DependentUpon>CourseEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseList.ascx.designer.vb">
+      <DependentUpon>CourseList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseList.ascx.vb">
+      <DependentUpon>CourseList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseResults.ascx.designer.vb">
+      <DependentUpon>CourseResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseResults.ascx.vb">
+      <DependentUpon>CourseResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadEdit_Popup.aspx.designer.vb">
+      <DependentUpon>DownloadEdit_Popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadEdit_Popup.aspx.vb">
+      <DependentUpon>DownloadEdit_Popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadList.ascx.designer.vb">
+      <DependentUpon>DownloadList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadList.ascx.vb">
+      <DependentUpon>DownloadList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloads.aspx.designer.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads.aspx.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorDisplay.aspx.vb">
+      <DependentUpon>ErrorDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventBrief.ascx.designer.vb">
+      <DependentUpon>EventBrief.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EventBrief.ascx.vb">
+      <DependentUpon>EventBrief.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetails.aspx.designer.vb">
+      <DependentUpon>EventDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetails.aspx.vb">
+      <DependentUpon>EventDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventEdit.aspx.designer.vb">
+      <DependentUpon>EventEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventEdit.aspx.vb">
+      <DependentUpon>EventEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventList.ascx.designer.vb">
+      <DependentUpon>EventList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EventList.ascx.vb">
+      <DependentUpon>EventList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventResults.aspx.designer.vb">
+      <DependentUpon>EventResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventResults.aspx.vb">
+      <DependentUpon>EventResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsArchive.aspx.designer.vb">
+      <DependentUpon>EventsArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsArchive.aspx.vb">
+      <DependentUpon>EventsArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventSearch.ascx.designer.vb">
+      <DependentUpon>EventSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EventSearch.ascx.vb">
+      <DependentUpon>EventSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventSearchPopup.aspx.designer.vb">
+      <DependentUpon>EventSearchPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventSearchPopup.aspx.vb">
+      <DependentUpon>EventSearchPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsFuture.aspx.designer.vb">
+      <DependentUpon>EventsFuture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsFuture.aspx.vb">
+      <DependentUpon>EventsFuture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsRecent.aspx.designer.vb">
+      <DependentUpon>EventsRecent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsRecent.aspx.vb">
+      <DependentUpon>EventsRecent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportResults.aspx.designer.vb">
+      <DependentUpon>ExportResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportResults.aspx.vb">
+      <DependentUpon>ExportResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="File.aspx.designer.vb">
+      <DependentUpon>File.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="File.aspx.vb">
+      <DependentUpon>File.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileList.ascx.designer.vb">
+      <DependentUpon>FileList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FileList.ascx.vb">
+      <DependentUpon>FileList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HomeEvents.aspx.designer.vb">
+      <DependentUpon>HomeEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEvents.aspx.vb">
+      <DependentUpon>HomeEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeHeader.aspx.designer.vb">
+      <DependentUpon>HomeHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeHeader.aspx.vb">
+      <DependentUpon>HomeHeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeNews.aspx.designer.vb">
+      <DependentUpon>HomeNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeNews.aspx.vb">
+      <DependentUpon>HomeNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hook.aspx.designer.vb">
+      <DependentUpon>Hook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hook.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>Hook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hook_EventPhotos.aspx.designer.vb">
+      <DependentUpon>Hook_EventPhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hook_EventPhotos.aspx.vb">
+      <DependentUpon>Hook_EventPhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTMLEditor.ascx.designer.vb">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="HTMLEditor.ascx.vb">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportResults.aspx.designer.vb">
+      <DependentUpon>ImportResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportResults.aspx.vb">
+      <DependentUpon>ImportResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinkEventNotice.aspx.designer.vb">
+      <DependentUpon>LinkEventNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinkEventNotice.aspx.vb">
+      <DependentUpon>LinkEventNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinkEventResults.aspx.designer.vb">
+      <DependentUpon>LinkEventResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinkEventResults.aspx.vb">
+      <DependentUpon>LinkEventResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogArchive.aspx.designer.vb">
+      <DependentUpon>LogArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogArchive.aspx.vb">
+      <DependentUpon>LogArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogExplanation.aspx.designer.vb">
+      <DependentUpon>LogExplanation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogExplanation.aspx.vb">
+      <DependentUpon>LogExplanation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogList.ascx.designer.vb">
+      <DependentUpon>LogList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LogList.ascx.vb">
+      <DependentUpon>LogList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogResults.aspx.designer.vb">
+      <DependentUpon>LogResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogResults.aspx.vb">
+      <DependentUpon>LogResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LookupTables.aspx.designer.vb">
+      <DependentUpon>LookupTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTables.aspx.vb">
+      <DependentUpon>LookupTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lookup_Club.aspx.designer.vb">
+      <DependentUpon>Lookup_Club.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup_Club.aspx.vb">
+      <DependentUpon>Lookup_Club.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lookup_Venue.aspx.designer.vb">
+      <DependentUpon>Lookup_Venue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup_Venue.aspx.vb">
+      <DependentUpon>Lookup_Venue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapTest.aspx.designer.vb">
+      <DependentUpon>MapTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapTest.aspx.vb">
+      <DependentUpon>MapTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembershipList.ascx.designer.vb">
+      <DependentUpon>MembershipList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipList.ascx.vb">
+      <DependentUpon>MembershipList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modCommonFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modDBFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modDB_WebForms.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modFileUtilities.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modFunctions_WebForms.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyResults.aspx.designer.vb">
+      <DependentUpon>MyResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyResults.aspx.vb">
+      <DependentUpon>MyResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArchive.aspx.designer.vb">
+      <DependentUpon>NewsArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArchive.aspx.vb">
+      <DependentUpon>NewsArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsEdit.aspx.designer.vb">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsEdit.aspx.vb">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsItem.aspx.designer.vb">
+      <DependentUpon>NewsItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsItem.aspx.vb">
+      <DependentUpon>NewsItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsList.ascx.designer.vb">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsList.ascx.vb">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PenOCDB.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PenOCGlobal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Photo.aspx.designer.vb">
+      <DependentUpon>Photo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photo.aspx.vb">
+      <DependentUpon>Photo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoHeader.aspx.designer.vb">
+      <DependentUpon>PhotoHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoHeader.aspx.vb">
+      <DependentUpon>PhotoHeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoIndex.aspx.designer.vb">
+      <DependentUpon>PhotoIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoIndex.aspx.vb">
+      <DependentUpon>PhotoIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedirectFrame.aspx.designer.vb">
+      <DependentUpon>RedirectFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectFrame.aspx.vb">
+      <DependentUpon>RedirectFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultList.ascx.designer.vb">
+      <DependentUpon>ResultList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultList.ascx.vb">
+      <DependentUpon>ResultList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetStyle.aspx.designer.vb">
+      <DependentUpon>SetStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetStyle.aspx.vb">
+      <DependentUpon>SetStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Start.aspx.designer.vb">
+      <DependentUpon>Start.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Start.aspx.vb">
+      <DependentUpon>Start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadFile.ascx.designer.vb">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadFile.ascx.vb">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadImage.aspx.designer.vb">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadImage.aspx.vb">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadPhotos.aspx.designer.vb">
+      <DependentUpon>UploadPhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadPhotos.aspx.vb">
+      <DependentUpon>UploadPhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserList.ascx.designer.vb">
+      <DependentUpon>UserList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.ascx.vb">
+      <DependentUpon>UserList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkItems.aspx.designer.vb">
+      <DependentUpon>WorkItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems.aspx.vb">
+      <DependentUpon>WorkItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <EmbeddedResource Include="Admin.aspx.resx">
+      <DependentUpon>Admin.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCommittee.aspx.resx">
+      <DependentUpon>AdminCommittee.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCompetitors.aspx.resx">
+      <DependentUpon>AdminCompetitors.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEvents.aspx.resx">
+      <DependentUpon>AdminEvents.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFiles.aspx.resx">
+      <DependentUpon>AdminFiles.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogs.aspx.resx">
+      <DependentUpon>AdminLogs.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMembership.aspx.resx">
+      <DependentUpon>AdminMembership.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNews.aspx.resx">
+      <DependentUpon>AdminNews.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.aspx.resx">
+      <DependentUpon>AdminUsers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarPopup.aspx.resx">
+      <DependentUpon>CalendarPopup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorEdit.aspx.resx">
+      <DependentUpon>CompetitorEdit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorList.ascx.resx">
+      <DependentUpon>CompetitorList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorMatch.aspx.resx">
+      <DependentUpon>CompetitorMatch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorSearch.ascx.resx">
+      <DependentUpon>CompetitorSearch.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorSearchPopup.aspx.resx">
+      <DependentUpon>CompetitorSearchPopup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorSelect.ascx.resx">
+      <DependentUpon>CompetitorSelect.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmDelete.aspx.resx">
+      <DependentUpon>ConfirmDelete.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.aspx.resx">
+      <DependentUpon>Contact.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseEdit.aspx.resx">
+      <DependentUpon>CourseEdit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseList.ascx.resx">
+      <DependentUpon>CourseList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseResults.ascx.resx">
+      <DependentUpon>CourseResults.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadEdit_Popup.aspx.resx">
+      <DependentUpon>DownloadEdit_Popup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadList.ascx.resx">
+      <DependentUpon>DownloadList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Downloads.aspx.resx">
+      <DependentUpon>Downloads.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorDisplay.aspx.resx">
+      <DependentUpon>ErrorDisplay.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventBrief.ascx.resx">
+      <DependentUpon>EventBrief.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventDetails.aspx.resx">
+      <DependentUpon>EventDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventEdit.aspx.resx">
+      <DependentUpon>EventEdit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventList.ascx.resx">
+      <DependentUpon>EventList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventResults.aspx.resx">
+      <DependentUpon>EventResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsArchive.aspx.resx">
+      <DependentUpon>EventsArchive.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventSearch.ascx.resx">
+      <DependentUpon>EventSearch.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventSearchPopup.aspx.resx">
+      <DependentUpon>EventSearchPopup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsFuture.aspx.resx">
+      <DependentUpon>EventsFuture.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsRecent.aspx.resx">
+      <DependentUpon>EventsRecent.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportResults.aspx.resx">
+      <DependentUpon>ExportResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File.aspx.resx">
+      <DependentUpon>File.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileList.ascx.resx">
+      <DependentUpon>FileList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeEvents.aspx.resx">
+      <DependentUpon>HomeEvents.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeHeader.aspx.resx">
+      <DependentUpon>HomeHeader.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeNews.aspx.resx">
+      <DependentUpon>HomeNews.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hook_EventPhotos.aspx.resx">
+      <DependentUpon>Hook_EventPhotos.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTMLEditor.ascx.resx">
+      <DependentUpon>HTMLEditor.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportResults.aspx.resx">
+      <DependentUpon>ImportResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkEventNotice.aspx.resx">
+      <DependentUpon>LinkEventNotice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkEventResults.aspx.resx">
+      <DependentUpon>LinkEventResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogArchive.aspx.resx">
+      <DependentUpon>LogArchive.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogExplanation.aspx.resx">
+      <DependentUpon>LogExplanation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogList.ascx.resx">
+      <DependentUpon>LogList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOut.aspx.resx">
+      <DependentUpon>LogOut.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogResults.aspx.resx">
+      <DependentUpon>LogResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookupTables.aspx.resx">
+      <DependentUpon>LookupTables.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup_Club.aspx.resx">
+      <DependentUpon>Lookup_Club.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup_Venue.aspx.resx">
+      <DependentUpon>Lookup_Venue.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapTest.aspx.resx">
+      <DependentUpon>MapTest.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipList.ascx.resx">
+      <DependentUpon>MembershipList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.aspx.resx">
+      <DependentUpon>menu.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyResults.aspx.resx">
+      <DependentUpon>MyResults.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsArchive.aspx.resx">
+      <DependentUpon>NewsArchive.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsEdit.aspx.resx">
+      <DependentUpon>NewsEdit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsItem.aspx.resx">
+      <DependentUpon>NewsItem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsList.ascx.resx">
+      <DependentUpon>NewsList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photo.aspx.resx">
+      <DependentUpon>Photo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoHeader.aspx.resx">
+      <DependentUpon>PhotoHeader.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoIndex.aspx.resx">
+      <DependentUpon>PhotoIndex.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedirectFrame.aspx.resx">
+      <DependentUpon>RedirectFrame.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultList.ascx.resx">
+      <DependentUpon>ResultList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetStyle.aspx.resx">
+      <DependentUpon>SetStyle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.aspx.resx">
+      <DependentUpon>Start.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadFile.ascx.resx">
+      <DependentUpon>UploadFile.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadImage.aspx.resx">
+      <DependentUpon>UploadImage.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadPhotos.aspx.resx">
+      <DependentUpon>UploadPhotos.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserList.ascx.resx">
+      <DependentUpon>UserList.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems.aspx.resx">
+      <DependentUpon>WorkItems.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hook.aspx" />
+    <Content Include="images\AR.JPG" />
+    <Content Include="images\AttackPoint.JPG" />
+    <Content Include="images\CompassPoint.JPG" />
+    <Content Include="images\download.gif" />
+    <Content Include="images\IOF.JPG" />
+    <Content Include="images\OCAD.JPG" />
+    <Content Include="images\RACO.JPG" />
+    <Content Include="images\ROC.JPG" />
+    <Content Include="images\SAOF.JPG" />
+    <Content Include="images\WinSplits.JPG" />
+    <Content Include="Links.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\news\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/penoc</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
