@@ -68,6 +68,7 @@
 				</asp:DropDownList>
 			</EditItemTemplate>
 		</asp:TemplateColumn>
+		<asp:BoundColumn DataField="strRaceNumber" HeaderText="Race Number" SortExpression="strRaceNumber"></asp:BoundColumn>
 		<asp:BoundColumn DataField="Time" HeaderText="Time"></asp:BoundColumn>
 		<asp:BoundColumn DataField="Points" HeaderText="Points"></asp:BoundColumn>
 		<asp:TemplateColumn HeaderText="DSQ">

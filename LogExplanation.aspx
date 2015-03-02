@@ -91,7 +91,7 @@
 							<LI>
 								<asp:Label id="Label12" runat="server" CssClass="Text_10">Physical difficulty is calculated by multiplying the total climb (m) by 10 and adding it to the total distance for the course (m). </asp:Label>
 							<LI>
-								<asp:Label id="Label13" runat="server" CssClass="Text_10">Technical difficulty is determined by the Planner, and is a simple 'easy / moderate' or 'difficult'. Difficult courses rate 1.0 while the easy courses rate 0.7</asp:Label></LI></UL>
+								<asp:Label id="Label13" runat="server" CssClass="Text_10">Technical difficulty is determined by the Planner, and is a simple &#39;Easy&#39;, &#39;Moderate&#39; or &#39;Difficult&#39;. &#39;Difficult&#39; courses rate 1.0 while &#39;Moderate&#39; courses rate 0.75 and &#39;Easy&#39; courses rate 0.25</asp:Label></LI></UL>
 						<P>
 							<asp:Label id="Label14" runat="server" CssClass="Text_10">The rating for any course is the Physical rating multiplied by the Technical rating.</asp:Label></P>
 						<asp:Label id="Label15" runat="server" CssClass="Text_10">example:</asp:Label>
@@ -124,12 +124,12 @@
 							<TR>
 								<TD style="WIDTH: 122px" class="SectionHeader"><STRONG>Technical Rating</STRONG></TD>
 								<TD style="WIDTH: 72px" class="DataGridItem"><STRONG>1.0</STRONG></TD>
-								<TD class="DataGridItem"><STRONG>0.7</STRONG></TD>
+								<TD class="DataGridItem"><STRONG>0.75</STRONG></TD>
 							</TR>
 							<TR>
 								<TD style="WIDTH: 122px" class="SectionHeader"><STRONG>Total Rating</STRONG></TD>
 								<TD style="WIDTH: 72px" class="DataGridItem"><STRONG>7950</STRONG></TD>
-								<TD class="DataGridItem"><STRONG>3658</STRONG></TD>
+								<TD class="DataGridItem"><strong>3919</strong></TD>
 							</TR>
 						</TABLE>
 						<P>
@@ -188,7 +188,7 @@
 								<TR>
 									<TD class="SectionHeader">Course Rating</TD>
 									<TD class="DataGridItem">7950</TD>
-									<TD class="DataGridItem">3658</TD>
+									<TD class="DataGridItem">3919</TD>
 								</TR>
 								<TR>
 									<TD class="SectionHeader">Time</TD>
@@ -203,13 +203,13 @@
 								<TR>
 									<TD style="HEIGHT: 22px" class="SectionHeader">Calulation</TD>
 									<TD style="HEIGHT: 22px" class="DataGridItem"></TD>
-									<TD style="HEIGHT: 22px" class="DataGridItem">(67.58 / 52.93) * 800 * (3658 / 
+									<TD style="HEIGHT: 22px" class="DataGridItem">(67.58 / 52.93) * 800 * (3919 / 
 										7950)&nbsp;</TD>
 								</TR>
 								<TR>
 									<TD class="SectionHeader"><STRONG>Points</STRONG></TD>
 									<TD class="DataGridItem"><STRONG>800</STRONG></TD>
-									<TD class="DataGridItem"><STRONG>470</STRONG></TD>
+									<TD class="DataGridItem"><STRONG>504</STRONG></TD>
 								</TR>
 							</TABLE>
 						</P>

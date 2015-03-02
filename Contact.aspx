@@ -49,7 +49,7 @@
 						<asp:Label id="Label3" runat="server" CssClass="Text_10">To Subscribe to the Mailing List:</asp:Label></TD>
 					<TD vAlign="top">
 						<asp:Label id="Label8" runat="server" CssClass="Text_10">Send an e-mail to</asp:Label>
-						<asp:HyperLink id="HyperLink2" runat="server" CssClass="Text_10" Target="_blank" NavigateUrl="mailto:penoc-subscribe@yahoogroups.com&#13;&#10;">penoc-subscribe@yahoogroups.com</asp:HyperLink>
+						<asp:HyperLink id="HyperLink2" runat="server" CssClass="Text_10" Target="_blank" NavigateUrl="mailto:penoc+subscribe@googlegroups.com">penoc+subscribe@googlegroups.com</asp:HyperLink>
 					</TD>
 				</TR>
 				<TR>
@@ -57,8 +57,8 @@
 						<asp:Label id="Label4" runat="server" CssClass="Text_10">To Unsubscribe from the Mailing List:</asp:Label></TD>
 					<TD>
 						<asp:Label id="Label5" runat="server" CssClass="Text_10">Send an e-mail to</asp:Label>
-						<asp:HyperLink id="HyperLink1" runat="server" NavigateUrl="mailto:penoc-unsubscribe@yahoogroups.com&#13;&#10;"
-							Target="_blank" CssClass="Text_10">penoc-unsubscribe@yahoogroups.com</asp:HyperLink></TD>
+						<asp:HyperLink id="HyperLink1" runat="server" NavigateUrl="mailto:penoc+unsubscribe@googlegroups.com"
+							Target="_blank" CssClass="Text_10">penoc+unsubscribe@googlegroups.com</asp:HyperLink></TD>
 				</TR>
 				<TR>
 					<TD colSpan="2">

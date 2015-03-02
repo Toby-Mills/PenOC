@@ -481,7 +481,7 @@ Module PenOCDB
             " tblCourse.intControls AS Controls, tblLog.strLog AS Log, lutTechnical.strTechnical AS " & _
             " Technical, strReadOnlyFullName AS Competitor, " & _
             " lutCategory.idCategory, lutCategory.strCategory AS Category, lutClub.idClub, lutClub.strShortName AS Club, " & _
-            " CONVERT(varchar, tblResult.dteTime, 108) AS Time, " & _
+            " tblResult.strRaceNumber, CONVERT(varchar, tblResult.dteTime, 108) AS Time, " & _
             " tblResult.blnDisqualified AS Disqualified, tblResult.strComment AS " & _
             " Comment, tblResult.intPosition AS Position, tblResult.intPoints AS Points " & _
             " FROM  tblLog  RIGHT OUTER JOIN tblResult INNER JOIN tblCourse ON " & _
@@ -543,11 +543,11 @@ Module PenOCDB
 
     End Function
 
-    Public Function NewResult(ByRef conDB As OleDb.OleDbConnection, ByVal intCourse As Integer, ByVal intPosition As Integer, ByVal intCompetitor As Integer, ByVal intCategory As Integer, ByVal intClub As Integer, ByVal dteTime As DateTime, ByVal intPoints As Integer, ByVal blnDSQ As Boolean, ByVal strComment As String)
+    Public Function NewResult(ByRef conDB As OleDb.OleDbConnection, ByVal intCourse As Integer, ByVal intPosition As Integer, ByVal intCompetitor As Integer, ByVal intCategory As Integer, ByVal intClub As Integer, ByVal dteTime As DateTime, ByVal intPoints As Integer, ByVal blnDSQ As Boolean, ByVal strComment As String, strRaceNumber As String)
         Dim strSQL As String
 
         strSQL = "INSERT INTO tblResult (" & _
-         " intCourse, intCompetitor, intCategory, intClub, dteTime, intPosition, intPoints, blnDisqualified, strComment) " & _
+         " intCourse, intCompetitor, intCategory, intClub, dteTime, intPosition, intPoints, blnDisqualified, strComment, strRaceNumber) " & _
          " VALUES (" & SQLFormat(intCourse) & _
          ", " & SQLFormat(intCompetitor) & _
          ", " & SQLFormat(intCategory) & _
@@ -556,7 +556,8 @@ Module PenOCDB
          ", " & SQLFormat(intPosition) & _
          ", " & SQLFormat(intPoints) & _
          ", " & SQLFormat(blnDSQ) & _
-         ", " & SQLFormat(strComment) & ")"
+         ", " & SQLFormat(strComment) & _
+        ", " & SQLFormat(strRaceNumber) & ")"
 
         ExecuteSQL(conDB, strSQL)
 
@@ -1549,6 +1550,11 @@ Module PenOCDB
         Dim decBenchmarkWinningMinutes As Decimal
         Dim decCourseWeightFactor As Decimal
         Dim intMaxpoints As Integer
+        Dim objNumberFormat As System.Globalization.NumberFormatInfo
+
+        objNumberFormat = New System.Globalization.NumberFormatInfo
+        objNumberFormat.NumberDecimalSeparator = "."
+        objNumberFormat.NumberGroupSeparator = ","
 
         intCourseWeight = CourseWeight(conDB, intCourse)
         strWHERE = WhereCourse_idCourse(intCourse)
@@ -1568,7 +1574,7 @@ Module PenOCDB
             strSQL = "UPDATE tblResult SET  intPoints = CASE WHEN blndisqualified=1 THEN 0 WHEN dteTime IS NULL THEN 0 WHEN dteTime = 0 THEN 0 " & _
              " ELSE " & intMaxpoints & " *(" & SQLFormat(decBenchmarkWinningMinutes) & _
              " / (DATEPART(HOUR, dteTime) * 60 + DATEPART(MINUTE, dteTime) + CONVERT(Decimal, DATEPART(SECOND, dteTime)) / 60)) " & _
-             " * (" & decCourseWeightFactor & ") END " & _
+             " * (" & decCourseWeightFactor.ToString(objNumberFormat) & ") END " & _
              " WHERE intCourse = " & SQLFormat(intCourse)
             ExecuteSQL(conDB, strSQL)
         End If

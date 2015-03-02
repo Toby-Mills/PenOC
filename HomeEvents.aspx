@@ -39,9 +39,10 @@
                         target="_blank">Membership Form</a></li>
                     <li>Our email list will keep you informed of event details and results as they become
                         available.<br />
-                        To subscribe, send an email to: <a href="mailto:penoc-subscribe@yahoogroups.com">penoc-subscribe@yahoogroups.com</a></li>
+                        To subscribe, send an email to: <a href="mailto:penoc+subscribe@googlegroups.com">penoc+subscribe@googlegroups.com</a></li>
                     <li>For an introduction to Orienteering, see this beginner's guide: <a href="file.aspx?idFile=57">
                         Getting Started with Orienteering</a></li>
+                        <li>For news, reminders and post-race discussions, join us on <a href="https://www.facebook.com/groups/penoc/" target="_blank">Facebook</a></li>
                 </ul>
             </td>
         </tr>

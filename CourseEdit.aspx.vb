@@ -287,6 +287,7 @@ Partial Class CourseEdit
         Dim intCompetitor As Integer
         Dim intClub As Integer
         Dim intCategory As Integer
+        Dim strRaceNumber As String
         Dim dteTime As Date
         Dim intPosition As Integer
         Dim intPoints As Integer
@@ -301,7 +302,7 @@ Partial Class CourseEdit
         If blnSave Then
             intCompetitor = Me.CompetitorSelectResult.Selected
             intCourse = Me.txtID.Text
-
+            strRaceNumber = Me.txtRaceNumber.Text
             intCategory = Me.cmbCategory.SelectedValue
             intClub = Me.cmbClub.SelectedValue
             dteTime = ParseTime(Me.txtTime.Text)
@@ -315,7 +316,7 @@ Partial Class CourseEdit
             strComment = Me.txtComment.Text
 
             Try
-				PenOCDB.NewResult(c_conDB, intCourse, intPosition, intCompetitor, intCategory, intClub, dteTime, intPoints, blnDisqualified, strComment)
+                PenOCDB.NewResult(c_conDB, intCourse, intPosition, intCompetitor, intCategory, intClub, dteTime, intPoints, blnDisqualified, strComment, strRaceNumber)
             Catch ex As Exception
                 WebMsgBox(Page, "Error", "An error occurred adding this result: " & Replace(ex.Message, "'", ""))
             End Try

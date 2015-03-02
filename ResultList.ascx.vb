@@ -41,10 +41,11 @@ Partial Class ResultList
         ResultCompetitor = 15
         ResultCategory = 16
         ResultClub = 17
-        ResultTime = 18
-        ResultPoints = 19
-        ResultDisqualified = 20
-        ResultComment = 21
+        ResultRaceNumber = 18
+        ResultTime = 19
+        ResultPoints = 20
+        ResultDisqualified = 21
+        ResultComment = 22
     End Enum
 
     Private c_intSelectedEvent As Integer

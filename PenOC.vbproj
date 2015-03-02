@@ -82,6 +82,7 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <Name>ICSharpCode.SharpZipLib</Name>
       <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="obout_SlideMenu3_Pro_Net">
       <Name>obout_SlideMenu3_Pro_Net</Name>

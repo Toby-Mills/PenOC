@@ -49,7 +49,8 @@ Partial Class ImportResults
 		Time = 5
 		Points = 6
 		DSQ = 7
-		Comments = 8
+        Comments = 8
+        RaceNumber = 9
 	End Enum
 
 	Private Enum NewCompetitorGridColumn
@@ -663,6 +664,9 @@ Partial Class ImportResults
                     End If
                     .Item("Position") = drResultImport.Item("Pos")
                     .Item("Comment") = drResultImport.Item("Comment")
+                    If drResultImport.Table.Columns.Contains("RaceNumber") Then
+                        .Item("strRaceNumber") = drResultImport.Item("RaceNumber")
+                    End If
                 End With
                 dtResult.Rows.Add(drResult)
                 dtResult.AcceptChanges()
@@ -694,6 +698,7 @@ Partial Class ImportResults
         Dim intClub As Integer
         Dim intPoints As Integer
         Dim strComment As String
+        Dim strRaceNumber As String
         Dim dteTime As Date
         Dim strError As String
 
@@ -735,11 +740,12 @@ Partial Class ImportResults
                         LoadDBValue(drResult.Item("Time"), dteTime)
                         LoadDBValue(drResult.Item("Comment"), strComment)
                         LoadDBValue(drResult.Item("Points"), intPoints)
+                        LoadDBValue(drResult.Item("strRaceNumber"), strRaceNumber)
                         If intPoints = NULL_NUMBER Then
                             intPoints = 0
                         End If
                         Try
-                            PenOCDB.NewResult(c_conDB, drResult.Item("idCourse"), drResult.Item("Position"), drResult.Item("idCompetitor"), intCategory, intClub, dteTime, intPoints, drResult.Item("Disqualified"), strComment)
+                            PenOCDB.NewResult(c_conDB, drResult.Item("idCourse"), drResult.Item("Position"), drResult.Item("idCompetitor"), intCategory, intClub, dteTime, intPoints, drResult.Item("Disqualified"), strComment, strRaceNumber)
                         Catch ex As Exception
                             strError = ex.Message
                             blnSave = False

@@ -26,7 +26,7 @@
 	<body  onbeforeunload="doHourglass()">
 		<form id="Form1" method="post" runat="server">
 			<P><uc1:eventbrief id="EventBrief" runat="server"></uc1:eventbrief></P>
-			<P><asp:panel id="pnlCourseDetails" runat="server">
+			<P>&nbsp;<asp:panel id="pnlCourseDetails" runat="server">
 					<TABLE id="Table1" style="BORDER-RIGHT: midnightblue 1pt solid; BORDER-TOP: midnightblue 1pt solid; BORDER-LEFT: midnightblue 1pt solid; BORDER-BOTTOM: midnightblue 1pt solid"
 						cellSpacing="0" cellPadding="0" width="100%" bgColor="#d7f5ff" border="0">
 						<TR>
@@ -103,6 +103,7 @@
 							<asp:TextBox id="txtPoints" tabIndex="15" runat="server" Width="100px" Font-Size="10pt"></asp:TextBox>
 							<asp:Label id="Label12" runat="server" CssClass="Text_10">Club:</asp:Label>
 							<asp:DropDownList id="cmbClub" tabIndex="16" runat="server" Width="100px" Font-Size="10pt"></asp:DropDownList>
+							&nbsp;Race Number:<asp:TextBox ID="txtRaceNumber" runat="server"></asp:TextBox>
 							<BR>
 							<asp:Label id="Label14" runat="server" CssClass="Text_10">Disqualified:</asp:Label>
 							<asp:CheckBox id="chkDisqualified" tabIndex="17" runat="server" CssClass="Text_10"></asp:CheckBox>
